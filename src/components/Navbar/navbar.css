@@ -1,0 +1,15 @@
+.navbarStyle {
+    background-color: #202020;
+    /*se pone un borde para abajo*/
+    border-bottom: 1px solid #000000;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    color: #ffffff;
+}
+.deleteBg {
+    background-color: #202020;
+}
+.logo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.5% 3% 0.5% 3%;
+    border-radius: 2em;
+}
