@@ -6,10 +6,94 @@
     color: #ffffff;
 }
 .deleteBg {
+    font-size: 1.5rem;
     background-color: #202020;
 }
 .logo {
+    font-size: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 0.5% 3% 0.5% 3%;
     border-radius: 2em;
 }
+.button-color {
+    background-color: #202020;
+    color: #ffffff;
+    border-color: white;
+}
+.button-color:hover {
+    background-color: #202020;
+    color: #ffffff;
+    border-color: white;
+}
+
+/*mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm-animation of navbar-mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm*/
+
+  
+
+  .menu a {
+    color: #fff;
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+  
+  .menu a span {
+    background-color: #202020;
+    transition: transform 0.2s ease-out;
+  }
+  
+  .menu a span:first-child {
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  .menu a span:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+  }
+  
+  .menu i {
+    font-size: 30px;
+  }
+  
+  .menu a:hover span:first-child {
+    transform: translateY(100%);
+  }
+  
+  .menu a:hover span:last-child,
+  .menu[data-animation] a:hover span:last-child {
+    transform: none;
+  }
+  
+  /* ANIMATIONS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .menu[data-animation="to-top"] a span:last-child {
+    transform: translateY(100%);
+  }
+  
+  .menu[data-animation="to-top"] a:hover span:first-child {
+    transform: translateY(-100%);
+  }
+  
+  .menu[data-animation="to-right"] a span:last-child {
+    transform: translateX(-100%);
+  }
+  
+  .menu[data-animation="to-right"] a:hover span:first-child {
+    transform: translateX(100%);
+  }
+  
+  .menu[data-animation="to-left"] a span:last-child {
+    transform: translateX(100%);
+  }
+  
+  .menu[data-animation="to-left"] a:hover span:first-child {
+    transform: translateX(-100%);
+  }
