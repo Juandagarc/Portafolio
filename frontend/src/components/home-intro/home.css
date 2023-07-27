@@ -1,0 +1,53 @@
+.name-title {
+    margin-bottom: 0.5rem;
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 5vw;
+}
+.title-h1 {
+    color: greenyellow;
+    font-size: 500%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+}
+.title-p {
+    color: gray;
+    margin-top: 25%;
+    font-size: 150%;
+    font-family: tw cen mt;
+}
+/*se pone la imagenpara que comience desde laizquierda saliendose de la pantalla*/
+.img-home1 {
+    content: wrap;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: -40%;
+    top: 65%;
+    z-index: 1;
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .img-home1 {
+        content: wrap;
+        width: 40%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: -40%;
+        top: 50%;
+        z-index: 1;
+        
+    }
+}
+@media screen and (min-width: 1500px) {
+    .title-p {
+        margin-top: 50%;
+        font-size: 150%;
+        font-family: tw cen mt;
+    }
+  }

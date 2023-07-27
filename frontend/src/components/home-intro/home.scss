@@ -1,0 +1,96 @@
+.content {
+    position: absolute;
+    top: 290px;
+    left: 36vw;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    font-size: 3.5vw; /* Unidad relativa para el tamaño de fuente */
+    line-height: 8vw; /* Unidad relativa para el alto de línea */
+    color: #ecf0f1;
+  }
+  
+  .content__container {
+        font-weight: 500;
+    overflow: hidden;
+    height: 8vw; /* Unidad relativa para la altura */
+    padding: 0 4vw; /* Unidad relativa para el padding */
+    position: relative;
+    font-size: 8vw; /* Unidad relativa para el tamaño de fuente */
+
+
+  
+    &:after, &:before {
+      position: absolute;
+      top: 32%;
+      color: #16a085;
+      font-size: 150%;
+      line-height: 0px;
+      animation: opacity 4s infinite; /* Simplify the animation */
+    }
+  
+    &__text {
+      display: inline;
+      float: left;
+      margin: 0;
+    }
+  
+    &__list {
+
+      font-weight: 620;
+      margin-top: 5%;
+      padding-left: 0px;
+      text-align: left;
+      list-style: none;
+      animation: change 10s infinite; /* Simplify the animation */
+  
+      &__item {
+        line-height: 120px;
+        margin: 0;
+        white-space: nowrap; /* Prevent words from wrapping */
+      }
+    }
+  }
+//   @media screen and (max-width: 1000px) {
+//     .content {
+//     top: 200px;
+//     font-size: 5vw; /* Unidad relativa para el tamaño de fuente */
+//     left: 38vw;
+//     }
+
+//   }
+  @media screen and (max-width: 549px) {
+    .content {
+    top: 200px;
+    font-size: 5vw; /* Unidad relativa para el tamaño de fuente */
+    left: 38vw;
+    }
+
+  }
+  @media screen and (min-width: 1500px) {
+    .content {
+        top: 350px;
+        font-size: 5vw; /* Unidad relativa para el tamaño de fuente */
+        left: 36vw;
+        }
+  }
+      
+  
+  
+  
+  @keyframes change {
+    20%, 53.33% { transform: translate3d(0, -25%, 0); }
+    50%, 53.33% { transform: translate3d(0, -75%, 0); }
+  }
+
+  //para la imagen del home1
+  .img-home1 {
+    animation: Appear1 3s ease-in-out forwards;
+  }
+  
+  @keyframes Appear1 {
+    to { transform: translate3d(80%, 0, 0); }
+  }
+  
+
+    
