@@ -7,19 +7,20 @@ const Footer = () => {
         <ul className="social-icons">
             {/* instagram */}
             <li>
-            <a href="#" className="social-icon facebook">
+            <a href="https://www.instagram.com/juanda_garc/" className="social-icon facebook">
                 <i className="fab fa-instagram icon"></i>
             </a>
             </li>
             <li>
-            <a href="#" className="social-icon twitter">
+            {/* se crea uno para que enviar correo */}
+            <a href="mailto:juan.garcia17@utp.edu.co?subject = Feedback&body = Message" className="social-icon twitter">
                 <span className="material-symbols-outlined">
                 mail
                 </span>
             </a>
             </li>
             <li>
-            <a href="#" className="social-icon linkedin">
+            <a href="https://www.linkedin.com/in/juan-david-garcia-arce-50169a283/" className="social-icon linkedin">
                 <i className="fab fa-linkedin-in icon"></i>
             </a>
             </li>

@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 import './navbar.css';
 
 function NavbarMenu() {
@@ -18,7 +19,7 @@ function NavbarMenu() {
     <>
       <Navbar className='navbarStyle navbar-pc' data-bs-theme="dark">
         <Container className='deleteBg'>
-          <Navbar.Brand href="#home" className='logo'>.JD()</Navbar.Brand>
+          <Navbar.Brand href="/" className='logo'>.JD()</Navbar.Brand>
           <Button 
         variant="primary"
         onClick={handleToggleMobileNavbar}
@@ -28,9 +29,9 @@ function NavbarMenu() {
       </Button>
           <Nav className={`deleteBg ms-auto d-none d-sm-flex ${showMobileNavbar ? 'd-none' : ''}`}>
             {/* Mostrar los enlaces del navbar solo en pantallas más grandes */}
-            <Nav.Link href="#home" className='menu'>
+            <Nav.Link href="/" className='menu'>
                 <li>
-                    <a href="#0">
+                    <a href="/">
                     <span>Home</span>
                     <span className="material-symbols-outlined">
                     home
@@ -38,9 +39,9 @@ function NavbarMenu() {
                     </a>
                 </li>
              </Nav.Link>
-             <Nav.Link href="#home" className='menu'>
+             <Nav.Link href="/" className='menu'>
                 <li>
-                    <a href="#0">
+                    <a href="/About">
                     <span>About</span>
                     <span className="material-symbols-outlined">
                     info
