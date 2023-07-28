@@ -1,0 +1,18 @@
+.title-about-container {
+    padding-left: 5%;
+    color: white;
+    background-color: black;
+    padding-bottom: 3%;
+  }
+  .const {
+        margin-left: 10%;
+      color: rgb(255, 47, 82);
+      font-weight: 700;
+      font-size: 3vw;
+  }
+  .about-me{
+      font-weight: 700;
+      font-size: 7vw;
+      text-align: left;
+      margin-left: 0;
+  }

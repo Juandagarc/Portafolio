@@ -11,6 +11,9 @@ const Home = () => {
         <div className="area" >
             <HomeIntro />
             <GitHubCard />
+            <button className="git-hub-follow-button">
+                <a href="https://github.com/Juandagarc" target="_blank" rel="noreferrer">Follow me on GitHub</a>
+            </button>
             <ul className="circles">
                 <li><img src={typescript} alt="" id="circular-image-1" /></li>
                 <li><img src={javascript} alt="" id="circular-image-2" /></li>

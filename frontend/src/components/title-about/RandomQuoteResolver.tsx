@@ -53,61 +53,37 @@ const RandomQuoteResolver: React.FC = () => {
 
         function doResolverEffect(options: ResolveOptions, callback?: RandomizerCallback): void {
           const { resolveString, characters, offset } = options;
-          const partialString = resolveString!.substring(0, offset);
-          const combinedOptions: ResolveOptions = { ...options, partialString };
 
-          doRandomiserEffect(combinedOptions, () => {
-            const nextOptions: ResolveOptions = { ...options, offset: offset + 1 };
+          if (offset <= resolveString!.length) {
+            const partialString = resolveString!.substring(0, offset);
+            const combinedOptions: ResolveOptions = { ...options, partialString };
 
-            if (offset <= resolveString!.length) {
+            doRandomiserEffect(combinedOptions, () => {
+              const nextOptions: ResolveOptions = { ...options, offset: offset + 1 };
               doResolverEffect(nextOptions, callback);
-            } else if (typeof callback === "function") {
-              callback();
-            }
-          });
+            });
+          } else if (typeof callback === "function") {
+            callback();
+          }
         }
 
         doResolverEffect(combinedOptions, callback);
       }
     };
 
-    const strings: string[] = [
-      'Oh thank god, you\'re alright.',
-      'You know, being Caroline taught me a valuable lesson. I thought you were my greatest enemy. When all along you were my best friend.',
-      'The surge of emotion that shot through me when I saved your life taught me an even more valuable lesson: where Caroline lives in my brain.',
-      'Goodbye, Caroline.',
-      'You know, deleting Caroline just now taught me a valuable lesson. The best solution to a problem is usually the easiest one. And I\'ll be honest.',
-      'Killing you? Is hard.',
-      'You know what my days used to be like? I just tested. Nobody murdered me. Or put me in a potato. Or fed me to birds. I had a pretty good life.',
-      'And then you showed up. You dangerous, mute lunatic. So you know what?',
-      'You win.',
-      'Just go.',
-      'It\'s been fun. Don\'t come back.',
-      '......'
-    ];
-
-    let counter: number = 0;
-
     const options: ResolveOptions = {
       offset: 0,
       timeout: 5,
       iterations: 10,
       characters: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'x', 'y', 'x', '#', '%', '&', '-', '+', '_', '?', '/', '\\', '='],
-      resolveString: strings[counter],
+      resolveString: 'ABOUT_ME()', // Cambia aquí a la palabra que desees resolver
       element: document.querySelector('[data-target-resolver]') as HTMLElement,
     };
 
     function callback() {
-      setTimeout(() => {
-        counter++;
-
-        if (counter >= strings.length) {
-          counter = 0;
-        }
-
-        const nextOptions = { ...options, resolveString: strings[counter] };
-        resolver.resolve(nextOptions, callback);
-      }, 1000);
+      // Detener el efecto después de la primera iteración
+      // Comenta esta línea si deseas que el efecto continúe de forma infinita.
+      return;
     }
 
     resolver.resolve(options, callback);
@@ -121,7 +97,7 @@ const RandomQuoteResolver: React.FC = () => {
 
   return (
     <div className="container">
-      <h1 className="heading" data-target-resolver></h1>
+      <h1 className="about-me" data-target-resolver></h1>
     </div>
   );
 };

@@ -8,10 +8,6 @@ const About = () => {
 
     return (
         <div>
-            <div className="title-about-container">
-                <h1 className="const">const</h1>
-                <h1 className="about-me"> ABOUT_ME()</h1>
-            </div>
             <div className="content-1 ">
                 <p className="text-1 ">
                 <h1 className="general-title">GENERAL</h1>
@@ -23,7 +19,7 @@ const About = () => {
                 </p>
                 {/* <img src={ AboutImage1 } alt="image1" className="about-image1" /> */}
             </div>
-        <TitleAbout />
+            <figure><embed src="https://wakatime.com/share/@18efb7ff-a1b8-42bd-ade2-5bd5f8e15f4f/6b7748b5-3660-4405-b98a-ba73721d3386.svg"></embed></figure>
         </div>
     )
 }

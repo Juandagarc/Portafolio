@@ -51,7 +51,7 @@ function NavbarMenu() {
              </Nav.Link>
              <Nav.Link href="#home" className='menu'>
                 <li>
-                    <a href="#0">
+                    <a href="https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/juan+david-garc%C3%ADa/56bd9396-c820-4767-b82c-2d525d2225f3?view=html">
                     <span>CV</span>
                     <span className="material-symbols-outlined">
                     picture_as_pdf

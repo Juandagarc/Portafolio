@@ -115,3 +115,30 @@
     }
 
 }
+.git-hub-follow-button {
+    /* margin with 5% left and bottom but  0 top and rigth*/
+    margin: 0 0 5% 5%;
+    font-weight: 700;
+    background-color: rgb(72, 70, 70);
+    border: none;
+    padding: 1%;
+    /*transform to uppercase*/
+    text-transform: uppercase;
+    /*border rdios para bordes inferiores*/
+    border-radius: 0 0 2em 2em;
+    transition: 0.5s;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.git-hub-follow-button:hover {
+    padding-top: 2%;
+    transition: 0.5s;
+}
+@media (max-width: 600px) {
+    .git-hub-follow-button {
+        margin: 0 0 5% 10%;
+    }
+}

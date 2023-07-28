@@ -1,18 +1,4 @@
-.title-about-container {
-  padding-left: 5%;
-  color: white;
-  background-color: black;
-  padding-bottom: 3%;
-}
-.const {
-    color: rgb(255, 47, 82);
-    font-weight: 700;
-    font-size: 3vw;
-}
-.about-me{
-    font-weight: 700;
-    font-size: 7vw;
-}
+
 .about-image1 {
     width: 30vw;
     margin-left: 5%;
@@ -24,6 +10,7 @@
     display: flex;
     position: relative;
     margin: 5%;
+    margin-bottom: 01%;
     color: white;
     background-color: #292828;
     padding: 4%;
@@ -46,4 +33,11 @@
     .about-image1 {
         width: 50vw;
     }
+}
+/*center figure*/
+figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
 }

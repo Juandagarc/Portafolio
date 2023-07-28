@@ -36,7 +36,6 @@
         0 15px 40px rgba(0, 0, 0, 0.1);
     padding: 3rem;
     margin: 0 1.5rem;
-    margin-bottom: 5%;
     display: flex;
     flex-direction: row;
 }
@@ -49,6 +48,7 @@
 }
 
 .user-info {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #eee;
     margin-left: 2rem;
 }
@@ -77,6 +77,7 @@
 }
 
 .repo {
+    
     text-decoration: none;
     color: #fff;
     background-color: #000000;
@@ -87,6 +88,8 @@
     display: inline-block;
 }
 .user-name {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -95,4 +98,11 @@
         flex-direction: column;
         align-items: center;
     }
+}
+.user-info ul {
+    list-style-type: none;
+    display: flex;
+    /* padding: 0; */
+    max-width: 400px;
+    justify-content: space-evenly;
 }
