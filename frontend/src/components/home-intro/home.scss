@@ -74,6 +74,55 @@
         left: 36vw;
         }
   }
+  @media screen and (min-width: 2000px) {
+    .content {
+        top: 400px;
+        left: 36vw;
+
+        }
+        .content__container {
+          font-weight: 500;
+      overflow: hidden;
+      height: 8vw; /* Unidad relativa para la altura */
+      padding: 0 4vw; /* Unidad relativa para el padding */
+      position: relative;
+      font-size: 8vw; /* Unidad relativa para el tamaño de fuente */
+  
+  
+    
+      &:after, &:before {
+        position: absolute;
+        top: 32%;
+        color: #16a085;
+        font-size: 150%;
+        line-height: 0px;
+        animation: opacity 4s infinite; /* Simplify the animation */
+      }
+    
+      &__text {
+        display: inline;
+        float: left;
+        margin: 0;
+      }
+    
+      &__list {
+  
+        font-weight: 620;
+        margin-top: 5%;
+        padding-left: 0px;
+        text-align: left;
+        list-style: none;
+        animation: change 10s infinite; /* Simplify the animation */
+    
+        &__item {
+          line-height: 180px;
+          margin: 0;
+          white-space: nowrap; /* Prevent words from wrapping */
+        }
+      }
+    }
+
+  }
       
   
   
