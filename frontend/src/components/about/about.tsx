@@ -1,8 +1,6 @@
 
-import TitleAbout from "../title-about/title-about";
 import "./about.css";
 //images
-import AboutImage1 from "../../assets/about-image.jpg"
 
 const About = () => {
 

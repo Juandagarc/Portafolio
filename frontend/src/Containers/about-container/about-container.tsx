@@ -1,7 +1,10 @@
+// Importaciones...
+
 import About from "../../components/about/about.tsx";
 import TitleAbout from "../../components/title-about/title-about.tsx";
 import "./about-container.css";
-import Particles from "react-tsparticles";
+import Particles from "react-tsparticles"; // Quita <IParticlesProps> de aquí
+
 import { loadFull } from "tsparticles";
 import { particlesOptions } from "./particlesConfig";
 
@@ -14,7 +17,10 @@ const AboutContainer = () => {
     <>
       <TitleAbout />
       <About />
-      <Particles init={particlesInit} options={particlesOptions} />
+      <Particles // Quita <IParticlesProps> de aquí también
+        init={particlesInit}
+        options={particlesOptions}
+      />
     </>
   );
 };

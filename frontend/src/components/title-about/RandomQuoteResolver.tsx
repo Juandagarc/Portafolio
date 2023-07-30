@@ -52,7 +52,7 @@ const RandomQuoteResolver: React.FC = () => {
         }
 
         function doResolverEffect(options: ResolveOptions, callback?: RandomizerCallback): void {
-          const { resolveString, characters, offset } = options;
+          const { resolveString, offset } = options;
 
           if (offset <= resolveString!.length) {
             const partialString = resolveString!.substring(0, offset);

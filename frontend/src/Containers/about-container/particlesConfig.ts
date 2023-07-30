@@ -1,29 +1,31 @@
+
+
 export const particlesOptions = {
-    autoPlay: true,
-    background: {
+  autoPlay: true,
+  background: {
+    color: {
+      value: "#000"
+    },
+    image: "",
+    position: "",
+    repeat: "",
+    size: "",
+    opacity: 1
+  },
+  backgroundMask: {
+    composite: "destination-out" as GlobalCompositeOperation,
+    cover: {
       color: {
-        value: "#000"
+        value: "#fff"
       },
-      image: "",
-      position: "",
-      repeat: "",
-      size: "",
       opacity: 1
     },
-    backgroundMask: {
-      composite: "destination-out",
-      cover: {
-        color: {
-          value: "#fff"
-        },
-        opacity: 1
-      },
-      enable: false
-    },
-    fullScreen: {
-      enable: true,
-      zIndex: -1
-    },
+    enable: false
+  },
+  fullScreen: {
+    enable: true,
+    zIndex: -1
+  },
     detectRetina: true,
     duration: 0,
     fpsLimit: 120,
