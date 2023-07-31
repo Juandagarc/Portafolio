@@ -1,7 +1,7 @@
 {
   "name": "portafolio",
   "private": true,
-  "homepage": "juandagarc.github.io/Portafolio/",
+  "homepage": "https://juandagarc.github.io/Portafolio/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
