@@ -1,7 +1,7 @@
 // Importaciones...
 
-import About from "../../components/about/about.tsx";
-import TitleAbout from "../../components/title-about/title-about.tsx";
+import About from "../../components/about/about.js";
+import TitleAbout from "../../components/title-about/title-about.js";
 import "./about-container.css";
 
 
