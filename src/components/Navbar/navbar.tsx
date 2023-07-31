@@ -48,7 +48,7 @@ function NavbarMenu() {
                     </a>
                 </li>
              </Nav.Link>
-             <Nav.Link href="#home" className='menu'>
+             <Nav.Link href="#" className='menu'>
                 <li>
                     <a href="https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/juan+david-garc%C3%ADa/56bd9396-c820-4767-b82c-2d525d2225f3?view=html">
                     <span>CV</span>
@@ -76,10 +76,10 @@ function NavbarMenu() {
           <Offcanvas.Title className='logo'>.JD()</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <Nav className="flex-column">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">About-me</Nav.Link>
-            <Nav.Link href="#pricing">CV</Nav.Link>
+          <Nav className="flex-column mini-navbar">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/about">About-me</Nav.Link>
+            <Nav.Link href="https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/juan+david-garc%C3%ADa/56bd9396-c820-4767-b82c-2d525d2225f3?view=html">CV</Nav.Link>
           </Nav>
         </Offcanvas.Body>
       </Offcanvas>

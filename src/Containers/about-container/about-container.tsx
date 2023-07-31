@@ -6,12 +6,13 @@ import "./about-container.css";
 
 
 
+
 const AboutContainer = () => {
   return (
-    <>
+    <div className="background">
       <TitleAbout />
       <About />
-    </>
+    </div>
   );
 };
 

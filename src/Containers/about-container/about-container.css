@@ -1,0 +1,28 @@
+.video {
+    margin-top: 12%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+    /* Se empieza a poner un filter: blur(5px); para que después de 3 segundos se vaya aclarando */
+    animation: fadeIn; /* Cambio aquí, agregando el tiempo de retraso y el estado final del blur */
+    animation-duration: 5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        filter: blur(5px);
+    }
+    100% {
+        opacity: 1;
+        
+    }
+}
+.background{
+    background: rgb(41,41,43);
+background: linear-gradient(180deg, rgba(41,41,43,1) 58%, rgba(0,0,0,1) 100%);
+}
