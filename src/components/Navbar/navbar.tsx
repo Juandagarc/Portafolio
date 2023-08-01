@@ -48,7 +48,7 @@ function NavbarMenu() {
                     </a>
                 </li>
              </Nav.Link>
-             <Nav.Link href="#" className='menu'>
+             <Nav.Link href="#cv" className='menu'>
                 <li>
                     <a href="https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/juan+david-garc%C3%ADa/56bd9396-c820-4767-b82c-2d525d2225f3?view=html">
                     <span>CV</span>
