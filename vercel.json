@@ -1,0 +1,7 @@
+{
+    "rewrites": [
+      { "source": "/about", "destination": "/About" },
+      { "source": "/:any*", "destination": "/" }
+    ]
+  }
+  
