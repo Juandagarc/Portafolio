@@ -50,7 +50,7 @@ function NavbarMenu() {
              </Nav.Link>
              <Nav.Link href="#cv" className='menu'>
                 <li>
-                    <a href="https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/juan+david-garc%C3%ADa/56bd9396-c820-4767-b82c-2d525d2225f3?view=html">
+                    <a href="https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/juan+david-garc%C3%ADa/17cb677d-66c7-410e-860f-f8aced720ed7?view=html">
                     <span>CV</span>
                     <span className="material-symbols-outlined">
                     picture_as_pdf
@@ -79,7 +79,7 @@ function NavbarMenu() {
           <Nav className="flex-column mini-navbar">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/about">About-me</Nav.Link>
-            <Nav.Link href="https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/juan+david-garc%C3%ADa/56bd9396-c820-4767-b82c-2d525d2225f3?view=html">CV</Nav.Link>
+            <Nav.Link href="https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/juan+david-garc%C3%ADa/17cb677d-66c7-410e-860f-f8aced720ed7?view=html">CV</Nav.Link>
           </Nav>
         </Offcanvas.Body>
       </Offcanvas>
